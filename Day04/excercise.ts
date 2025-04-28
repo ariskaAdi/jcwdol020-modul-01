@@ -63,3 +63,66 @@ console.log(
     .map((i) => i.charAt(0).toUpperCase() + i.slice(1))
     .join(" ")}`
 );
+
+// soal 7
+// Write a code to swap the case of each character from string
+
+let input1 = "The QuiCk BrOwN Fox";
+let output = input1
+  .split("")
+  .map((char) =>
+    char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase()
+  )
+  .join("");
+
+console.log(output);
+
+// soal 8
+// Write a code to find the largest of two given integers
+
+let angka1: number = 27;
+let angka2: number = 42;
+
+if (angka1 > angka2) {
+  console.log(`${angka1}`);
+} else {
+  console.log(`${angka2}`);
+}
+
+// soal 9
+// Write a conditional statement to sort three numbers
+let num1: number = 188;
+let num2: number = 25;
+let num3: number = 35;
+
+if (num1 > num2) {
+  [num1, num2] = [num2, num1];
+}
+if (num1 > num3) {
+  [num1, num3] = [num3, num1];
+}
+if (num2 > num3) {
+  [num2, num3] = [num3, num2];
+}
+
+console.log(num1, num2, num3);
+
+// soal 10
+// Write a code that shows 1 if the input is a string, 2 if the input is a number, and 3 for others data
+// type.
+
+let input: string | number | boolean = "hello";
+if (typeof input === "string") {
+  console.log(1);
+} else if (typeof input === "number") {
+  console.log(2);
+} else {
+  console.log(3);
+}
+
+// soal 11
+// Write a code to change every letter a into * from a string of input
+
+let Sentence: string = "An apple a day keeps the doctor away";
+let Output: string = Sentence.replace(/a/gi, "*");
+console.log(Output);

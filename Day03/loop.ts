@@ -13,3 +13,5 @@
 for (let y: number = 0; y < 3; y++) {
   console.log(`perulangan ke ${y}`);
 }
+
+// while loop -> kondisi looping yang tidak diketahui batas pasti akan berhenti
