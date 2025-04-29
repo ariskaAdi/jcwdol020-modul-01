@@ -70,9 +70,7 @@ console.log(
 let input1 = "The QuiCk BrOwN Fox";
 let output = input1
   .split("")
-  .map((char) =>
-    char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase()
-  )
+  .map((i) => (i === i.toUpperCase() ? i.toLowerCase() : i.toUpperCase()))
   .join("");
 
 console.log(output);
